@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69a8a53a16.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body class="light">
+  <div class="btn1">
+    <button onclick="myFunction()">Click on me</button>
+
+  </div>
+    <div id="container" >
+      <div>
+        <h1>Calculator</h1>
+      </div>
+      <div id="expression">
+        <div >
+                <input type="text" readonly id="output">
+            </div>
+            <div >
+                <input type="text" value="0" id="input">
+            </div>
+        <!-- <input type="text" id="txtInput" value=""> -->
+      </div>
+      <div id="standard-buttons" >
+        <div class=" button-row">
+          <div >
+            <button  class="btn " onclick="btnValue('7')" title="7">7</button>
+          </div>
+          <div >
+            <button  class="btn " onclick="btnValue('8')" title="8">8</button>
+          </div>
+          <div >
+            <button  class="btn " onclick="btnValue('9')" title="9">9</button>
+          </div>
+          <div >
+            <button class="btn" onclick="btnValue('/')"  title="Divide">÷</button>
+          </div>
+          <div >
+            <button  class="btn button-orange" onclick="clearInput()"  title="Clear all">AC</button>
+          </div>
+        </div>
+        <div class=" button-row">
+          <div >
+            <button   class="btn " onclick="btnValue('4')" title="4">4</button>
+          </div>
+          <div >
+            <button  class="btn " onclick="btnValue('5')" title="5">5</button>
+          </div>
+          <div >
+            <button  class="btn " onclick="btnValue('6')" title="6">6</button>
+          </div>
+          <div >
+            <button  class="btn" onclick="btnValue('*')"  title="Multiply">x</button>
+          </div>
+          <div >
+            <button  class="btn button-orange" onclick="delNum()"  title="Delete">DEL</button>
+          </div>
+        </div>
+        <div class=" button-row">
+          <div >
+            <button  class="btn " onclick="btnValue('1')" title="1">1</button>
+          </div>
+          <div >
+            <button   class="btn" onclick="btnValue('2')" title="2">2</button>
+          </div>
+          <div >
+            <button   class="btn " onclick="btnValue('3')" title="3">3</button>
+          </div>
+          <div >
+            <button  class="btn" onclick="btnValue('-')"  title="Subtract">-</button>
+          </div>
+          <div >
+            <button  class="btn button-blue" onclick="Result()"  title="Equals">=</button>
+          </div>
+        </div>
+        <div class=" button-row">
+          <div >
+            <button  class="btn" onclick="btnValue('.')" title="Decimal point">.</button>
+          </div>
+          <div >
+            <button  class="btn " onclick="btnValue('0')" title="0">0</button>
+          </div>
+          <div >
+            <button  class="btn" onclick="btnValue('%')" title="Negate">%</button>
+          </div>
+          <div >
+            <button  class="btn" onclick="btnValue('+')" title="Add">+</button>
+          </div>
+          
+        </div>
+        <div id="calc-history">
+            <span>Calculation history</span>
+            <button class="btn" id="clearAll" onclick="clearHistory()"><i class="fa-solid fa-trash"></i></button>
+            <hr>
+            <div id="historyDiv">
+              <!-- <div class="his">
+                    <p>5-2 =</p>
+                    <p>3</p>
+                </div> -->
+            </div>
+          </div>
+      </div>
+      
+      
+      
+     
+      
+    </div>
+  </body>
+</html>
